@@ -1,3 +1,92 @@
-site_name: My Docs
+site_name: 计科5班.exe
+nav:
+  - 首页:
+      - 首页/我们的班级星球.md
+      - 关于我们: 首页/关于我们.md
+      - 班级成员: 首页/班级成员.md
+  - 班级日志:
+      - 班级日志/index.md
+      - 首次班会: 班级日志/首次班会.md
+  - 班级相册:
+      - 班级相册: 班级相册/班级相册.md
+  - 访客留言:
+      - 访客留言: 访客留言/欢迎留言.md
 theme:
-  material
+  name: material
+  icon:
+    logo: material/dog
+    # logo: images/logo1.png
+    # favicon: images/logo1.png
+    annotation: material/arrow-right-circle # 注释图标
+    previous: fontawesome/solid/angle-left #更改页脚箭头
+    next: fontawesome/solid/angle-right
+  language: zh
+  palette: # 调色盘
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: grey
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+  features:
+    - tables.highlight # 高亮表格行
+    - content.tooltips # 为元素渲染工具提示
+    - content.footnote.tooltips # 不离开文档上下文的情况下阅读脚注
+    - content.tabs.link # 激活具有相同标签的所有选项卡
+    - navigation.top # 返回顶部按钮
+    - navigation.tabs # 顶部分类标签
+    - navigation.tabs.sticky # 粘性导航
+    - navigation.tabs.sections # 导航部分
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path # 每个页面的标题上方都会呈现痕迹导航
+    - navigation.hidden  # 添加此配置隐藏导航菜单
+    - navigation.expand
+    - navigation.instant.preview
+    # - search.highlight # 高亮显示
+    - search.suggest # 搜索建议
+    - search.share # 搜索共享,允许深度链接到当前搜索查询和结果
+    - navigation.indexes # 将文档直接附加到章节，这对于提供概览页特别有用
+    - navigation.footer # 指向当前页面的上一页和下一页的链接
+copyright: Copyright 长江大学计科12405班 All Rights Reserved
+extra_css:
+  - css/custom.css
+  - css/extra.css
+  - css/custom-fullscreen-video.css  
+  - css/table.css  
+  - css/pixel-font.css
+  - css/font-family.css
+  - css/mascotstyle.css
+  - css/icon.css
+  - css/times-new-roman.css
+extra:
+  # homepage: https://example.com #给文档站点设置一个主页link
+  generator: false # 移除声明
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alibabahappyman/class-web.git
+      name: 项目仓库
+    - icon: fontawesome/solid/school
+      link: https://www.yangtzeu.edu.cn
+      name: 长江大学官网
+    - icon: fontawesome/regular/calendar
+      link: https://jky.yangtzeu.edu.cn/index.htm
+      name: 长江大学计算机科学学院
+    - icon: fontawesome/solid/file-alt
+      link: https://bks.yangtzeu.edu.cn/index.htm
+      name: 长江大学本科生院（党委学生工作部、党委武装部）
+markdown_extensions: # 对齐图像、为图像添加标题（将它们呈现为图形）以及标记大图像以进行延迟加载
+  - attr_list # 扩展允许在 HTML 中编写 Markdown
+  - pymdownx.emoji: # 允许使用可以通过图标搜索发现的简单短代码来使用图标和表情符号
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - footnotes # 内联脚注
+plugins:
+  - search # 搜索框
+  - glightbox # 图像缩放功能
