@@ -1,0 +1,52 @@
+.typed-wrapper {
+    position: relative; /* 用于层级控制 */
+    z-index: 10; /* 确保在视频上方 */
+    width: 100% !important; /*优先样式声明，覆盖其他高优先级样式*/
+    height: 100% !important; 
+    display: flex; 
+    justify-content: flex-start !important;
+    align-items: flex-start !important; 
+    margin: 20px !important; /* 清除默认边距（避免偏移） */
+    padding: 20px 30px !important;/*元素内部间距*/
+}
+#element {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white; /* 文字白色，避免和视频背景融合 */
+    /*text-shadow: 0 0 8px rgba(0,0,0,0.8);*/ /* 加阴影，更清晰 */
+}
+.fullscreen-video {
+    position: absolute; /* 绝对定位，让视频在底层 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    z-index: 1; /* 层级低于文字 */
+}
+/* 视频铺满容器 */
+.fullscreen-video video {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover !important;
+    border: none !important;
+}
+
+/* 清除页面默认样式，避免干扰 */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    /*overflow: hidden !important;*/ /* 隐藏滚动条，避免偏移 */
+    position: relative; /* 让视频绝对定位基于 body */
+}
+
+/* 隐藏左侧菜单（保持不变） */
+html[sidebar="hide"] .md-sidebar--primary {
+    display: none !important;
+}
+html[sidebar="hide"] .md-content {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
