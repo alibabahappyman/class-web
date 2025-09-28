@@ -36,7 +36,7 @@
     </div>
     <div class="fullscreen-video">
     <video 
-        src="images/littleprince3.mp4" autoplay muted loop playsinline>
+        src="./images/littleprince3.mp4" autoplay muted loop playsinline>
     </video>
 </div>
     <script>

@@ -1,4 +1,8 @@
 site_name: 计科5班.exe
+# use_directory_urls: false
+repo_name: "alibabahappyman/class-web"
+repo_url: "https://github.com/alibabahappyman/class-web.git"  # 替换为仓库 URL
+edit_uri: "edit/main/docs/"  # 源码在仓库的 main 分支下的 docs 目录（可根据实际结构调整）
 nav:
   - 首页:
       - 首页/我们的班级星球.md
@@ -13,6 +17,7 @@ nav:
       - 访客留言: 访客留言/欢迎留言.md
 theme:
   name: material
+  # edit_url_new_window: true
   icon:
     logo: material/dog
     # logo: images/logo1.png
