@@ -15,5 +15,5 @@
 
 因为**正是我们花费在彼此身上的时间，才使得我们的班级变得如此重要。**
 <div class="mascot">
-    <img src="/images/l10.png">
+    <img src="../images/littleprince10.png">
 </div>

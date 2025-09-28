@@ -1,7 +1,7 @@
 site_name: 计科5班.exe
 # use_directory_urls: false
 repo_name: "alibabahappyman/class-web"
-repo_url: "https://github.com/alibabahappyman/class-web.git"  # 替换为仓库 URL
+repo_url: "https://github.com/alibabahappyman/class-web"  # 替换为仓库 URL
 edit_uri: "edit/main/docs/"  # 源码在仓库的 main 分支下的 docs 目录（可根据实际结构调整）
 nav:
   - 首页:
@@ -61,15 +61,15 @@ theme:
     - navigation.footer # 指向当前页面的上一页和下一页的链接
 copyright: Copyright 长江大学计科12405班 All Rights Reserved
 extra_css:
-  - css/custom.css
-  - css/extra.css
-  - css/custom-fullscreen-video.css  
-  - css/table.css  
-  - css/pixel-font.css
-  - css/font-family.css
-  - css/mascotstyle.css
-  - css/icon.css
-  - css/times-new-roman.css
+  - CSS/custom.css
+  - CSS/extra.css
+  - CSS/custom-fullscreen-video.css  
+  - CSS/table.css  
+  - CSS/pixel-font.css
+  - CSS/font-family.css
+  - CSS/mascotstyle.css
+  - CSS/icon.css
+  - CSS/times-new-roman.css
 extra:
   # homepage: https://example.com #给文档站点设置一个主页link
   generator: false # 移除声明
