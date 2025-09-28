@@ -1,0 +1,10 @@
+@font-face{
+    font-family:'方舟像素字体';
+    src: url('../font/方舟像素字体/TTF/12px-monospaced-ttf/ark-pixel-12px-monospaced-zh_cn.ttf')format('truetype');
+    /*font-weight:normal;
+    font-style:normal;*/
+    /*font-size: 30px;*/
+}
+.typed-wrapper{
+    font-family:'方舟像素字体',sans-serif,monospace;
+}
