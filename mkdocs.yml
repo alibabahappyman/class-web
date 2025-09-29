@@ -1,5 +1,6 @@
 site_name: 计科5班.exe
 # use_directory_urls: false
+site_url: https://alibabahappyman.github.io/class-web/  # 末尾的 / 必须保留
 repo_name: "alibabahappyman/class-web"
 repo_url: "https://github.com/alibabahappyman/class-web"  # 替换为仓库 URL
 edit_uri: "edit/main/docs/"  # 源码在仓库的 main 分支下的 docs 目录（可根据实际结构调整）
