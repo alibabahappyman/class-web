@@ -20,3 +20,9 @@
 .rank{
     text-align:right;
 }
+.thelink{
+    /*width:100%;*/
+    margin-left: 0; 
+    width: auto;
+    height: auto;
+}

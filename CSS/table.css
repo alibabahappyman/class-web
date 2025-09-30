@@ -1,21 +1,14 @@
-table {
-    width: 100%;
+.grid {
+  display:grid !important;
+  width:100%;
+  /*min-width:40px;
+  max-width:60px;*/
+  gap: 5px !important;  
+  margin: 1px 0 !important; 
 }
-/* 设置表格边框 */
-table, th, td {/*行，列*/
-    border: 1px solid #ddd;
-    border-collapse: collapse;/*相邻单元格的边框合并为单一边框*/
-    font-size: 15px;
-}
-th {
-    background-color: #f2f2f2;
-    color: #333;
-    font-weight: normal ! important;
-}
-tr:hover {
-    background-color: #f5f5f5;
-}
-td, th {
-    padding: 12px;
-    text-align: center;
+.grid > * {
+  text-align:center;
+  min-width: 120px !important; /* 子项最小宽度（窄屏不挤压，避免文字换行） */
+  max-width: 180px !important; /* 子项最大宽度（宽屏不拉伸，保持统一大小） */
+  padding: 12px !important; /* 子项内部上下左右留白，值越大，视觉上越“宽” */
 }
