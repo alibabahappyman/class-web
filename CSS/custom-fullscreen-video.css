@@ -6,30 +6,32 @@
     display: flex; 
     justify-content: flex-start !important;
     align-items: flex-start !important; 
-    margin: 20px !important; /* 清除默认边距（避免偏移） */
-    padding: 20px 30px !important;/*元素内部间距*/
+    margin: 10px !important; /* 清除默认边距（避免偏移） */
+    padding: 15px 20px !important;/*元素内部间距*/
 }
 #element {
-    font-size: 2rem;
+    font-size: clamp(1rem,4vw,2rem);
     font-weight: 400;
     color: white; /* 文字白色，避免和视频背景融合 */
-    /*text-shadow: 0 0 8px rgba(0,0,0,0.8);*/ /* 加阴影，更清晰 */
+    text-shadow: 0 0 8px rgba(0,0,0,0.8); /* 加阴影，更清晰 */
 }
 .fullscreen-video {
-    position: absolute; /* 绝对定位，让视频在底层 */
+    position: fixed; /* 固定位置 */
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100vh !important;
     overflow:hidden;
     z-index: 1; /* 层级低于文字 */
 }
 /* 视频铺满容器 */
 .fullscreen-video video {
     width: 100% !important;
-    height: auto;
+    height: 100% !important;
     object-fit: cover !important;
+    object-position:center;
     border: none !important;
+    display:block;
 }
 
 /* 清除页面默认样式，避免干扰 */
