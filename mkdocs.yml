@@ -6,7 +6,7 @@ repo_url: "https://github.com/alibabahappyman/class-web"  # 替换为仓库 URL
 edit_uri: "edit/main/docs/"  # 源码在仓库的 main 分支下的 docs 目录（可根据实际结构调整）
 nav:
   - 首页:
-      - 首页/我们的班级星球.md
+      - 我们的班级星球: 首页/我们的班级星球.md
       - 关于我们: 首页/关于我们.md
       - 班级成员: 首页/班级成员.md
   - 班级日志:
@@ -72,6 +72,7 @@ extra_css:
   - CSS/mascotstyle.css
   - CSS/icon.css
   - CSS/times-new-roman.css
+  - CSS/sidebar.css
 extra:
   # homepage: https://example.com #给文档站点设置一个主页link
   generator: false # 移除声明
@@ -90,6 +91,7 @@ extra:
       name: 长江大学本科生院（党委学生工作部、党委武装部）
 markdown_extensions: # 对齐图像、为图像添加标题（将它们呈现为图形）以及标记大图像以进行延迟加载
   - attr_list # 扩展允许在 HTML 中编写 Markdown
+  - md_in_html
   - pymdownx.emoji: # 允许使用可以通过图标搜索发现的简单短代码来使用图标和表情符号
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

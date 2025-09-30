@@ -1,0 +1,46 @@
+@keyframes ourmascot{
+        0%,100%{
+            /*background-color: red;*/
+            transform: rotate(0deg);
+        }
+        40%,70%{
+            transform: rotate(15deg);
+        }
+        /*70%{
+            transform: rotate(-15deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }*/
+        /* alt="mascot"给图片标记名字*/
+    }
+@keyframes ourmascot2{
+        0%,100%{
+            /*background-color: red;*/
+            transform: rotate(0deg);
+        }
+        40%,70%{
+            transform: rotate(25deg);
+        }
+    }
+.mascot{
+    animation:ourmascot 5s linear infinite;
+    position:fixed;
+    bottom:25px;
+    right:20px;
+    z-index:999;
+    width: 200px;
+    height: auto;
+    /*align-self:flex-end;*/
+    /*margin-left:auto;*/
+    /*animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;*/
+    /*animation-timing-function: ease-out;*/
+}
+.mascot:hover{
+    position:fixed;/*absolute随页面一起滑动，fixed会固定在原处*/
+    width: 250px;
+    height: auto;
+    animation:ourmascot2 5s linear infinite;
+}

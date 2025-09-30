@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.typed-wrapper{
+    font-family: "Press Start 2P",sans-serif;
+    /*font-size: 1px;
+    letter-spacing: 1px;*/
+    color: #2c3e50;
+    padding-left:20px;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}

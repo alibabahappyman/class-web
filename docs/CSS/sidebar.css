@@ -1,0 +1,4 @@
+.md-sidebar--primary {
+  /*position: fixed;*/ 
+  z-index: 30; //*比文字的 z-index: 10 更高，确保菜单在上方 */
+}
