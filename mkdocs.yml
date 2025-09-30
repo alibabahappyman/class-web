@@ -40,6 +40,8 @@ theme:
       toggle:
         icon: material/weather-night
         name: 切换到暗色模式
+  font:
+    code: Roboto Mono
   features:
     - tables.highlight # 高亮表格行
     - content.tooltips # 为元素渲染工具提示
@@ -67,7 +69,6 @@ extra_css:
   - CSS/custom-fullscreen-video.css  
   - CSS/table.css  
   - CSS/pixel-font.css
-  - CSS/font-family.css
   - CSS/mascotstyle.css
   - CSS/icon.css
   - CSS/times-new-roman.css

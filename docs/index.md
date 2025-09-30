@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>Typed.js</title>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <link rel="stylesheet" href="./CSS/custom-fullscreen-video.css">
-    <link rel="stylesheet" href="./CSS/pixel-font.css">
-    <link rel="stylesheet" href="./CSS/font-family.css">
     <style>
         /* 给打字容器的包裹层加 flex，不影响 body 全局 */
         .typed-wrapper {
@@ -14,20 +11,20 @@
             display: flex;
             justify-content: flex-start; /* 水平居左 */
             align-items: flex-end; /* 垂直居右 */
-            padding-left: 50px;
+            padding-left: 10px;
             margin: 300px 0 0 0; /* 上下留空，和其他元素隔开 */
             width:100%;
             /*overflow-x: auto;
             overflow-y: hidden;*/
         }
         #element {
-            font-size: 2rem;
+            font-size: 25px;
             color: #f0f0f0;
             text-shadow: 1px 0 0 #888,-1px 0 0 #888;/*描边*/
-            font-weight: 350;/*字体粗细*/
-            min-width: 1000px;
+            font-weight: 300;/*字体粗细*/
+            min-width: 500px;
             /*white-space: nowrap;*//*不换行*/
-            /*margin: 0 auto;*/
+            margin-left: 10px;
             line-height: 1.6;
         }
     </style>
@@ -45,17 +42,21 @@
     <script>
         var typed = new Typed("#element", {
             strings: [
-                "如果不去遍历世界，",
-                "我们就不知道什么是我们精神和情感的寄托，",
-                "但我们一旦遍历了世界，",
-                "却发现我们再也无法回到那美好的地方去了。",
-                "当我们开始寻求，",
-                "我们就已经失去，",
-                "而我们不开始寻求，",
-                "我们根本无法知道自己身边的一切是如此可贵。",
-                "审判自己比审判别人难多了。",
-                "如果你成功地正确审判了自己，",
-                "那么你就是一个真正的智者了。",
+                "The reason for the shining of the stars is that",
+                "everyone can find his own star.",
+                "In one of them I shall be laughing.",
+                "And so it will be as if all the stars were laughing,",
+                "when you look at the sky at night.",
+                "The time you spent on your rose is what makes your rose so important.",
+                "It is only with the heart that one can see rightly,",
+                "what isessential is invisible to the eye.",
+                "In the vast universe,",
+                "Our life is about constantly discovering meaning.",
+                "Live with dedication, no need to constantly strive and strive",
+                "But in this journey,",
+                "feel it with your heart",
+                "From the small things around me",
+                "Searching for the Meaning of Journey",
                 "Robert Frost said,",
                 "Two roads diverged in a wood,",
                 "and I took the one less traveled by,",
@@ -65,9 +66,9 @@
                 "Seize the day, boys.",
                 "Make your lives extraordinary."
             ],
-            typeSpeed: 100,
+            typeSpeed: 30,
             startDelay: 600, 
-            backSpeed: 60,
+            backSpeed: 20,
             smartBackspace: true,
             /*wordBreak: true;*//*单词差分。回退不破坏完整性*/
             shuffle: false,
