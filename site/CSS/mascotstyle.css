@@ -27,7 +27,7 @@
     animation:ourmascot 5s linear infinite;
     position:fixed;
     bottom:25px;
-    right:20px;
+    left:10px;
     z-index:999;
     width: 200px;
     height: auto;
